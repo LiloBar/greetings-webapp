@@ -1,5 +1,4 @@
-drop table users;
-
+drop table if exists users;
 create table users (
     id serial not null primary key,
     user_name text not null,

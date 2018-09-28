@@ -19,7 +19,6 @@
     "express-flash": "0.0.2",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
-    // "flash-express": "git://github.com/deveshgoyal/flash-express.git",
     "pg": "^7.4.3"
   },
   "devDependencies": {
