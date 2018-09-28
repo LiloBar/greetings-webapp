@@ -1,0 +1,68 @@
+<div class="body">
+  <h1 id="h1">Greetings</h1>
+  <div class="container">
+
+
+
+    <div class="counter">Counter:{{Count}}
+      <i class="counts"></i>
+    </div>
+    <form action="/greetings" method="post">
+
+      <div class="">
+        <input  placeholder="Enter your name" value="" name="theName">
+      </div>
+  {{!-- <input type="text" name="theName" > --}}
+
+      <div>
+        <label class="radio-inline">
+          <input type="radio" class="optradio" value="English" name="language">English
+        </label>
+        <label class="radio-inline">
+          <input type="radio" class="optradio" value="Afrikaans" name="language">Afrikaans
+        </label>
+        <label class="radio-inline">
+          <input type="radio" class="optradio" value="IsiXhosa" name="language">Isixhosa
+        </label>
+        <br />
+      </div>
+      <div>
+        <button style="font-size: 25px;" type="submit" class="greeting btn btn-info  btn-lg" name='button'>Greet</button>
+    </form>
+    <a href="/greeted">
+      <button style="color: white; font-size: 25px;" type="button" class="namesbtn btn btn-warning btn-lg">Greeted Names</button>
+    </a>
+    <a href="/reset">
+      <button style=" font-size: 25px;" type="button" class="clearBtn btn btn-danger btn-lg">Reset</button>
+    </a>
+    </div>
+
+    <br/>
+    <br/>
+    <div class="entry">
+
+    </div>
+
+      
+      {{#if messages.error}}
+    <div class='errorMessage'></div>
+      <h1 href="/fash" name="flash"> {{messages.error}}</h1>
+    </div>
+      {{/if}}
+
+
+
+
+
+
+    <div class="messageArea">
+      <span>{{Greet}}</span>
+
+    </div>
+
+
+
+
+
+  </div>
+</div>
