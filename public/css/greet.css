@@ -3,9 +3,14 @@
  
   background-color: #4CAF50;
   color: #f2f2f2;
-  margin-top: 5em;
+  margin-top: 1em;
   font-size: 2em;
   text-align: center;
+}
+
+.radio-inline {
+  padding: 1em;
+
 }
 
 #h1 {
@@ -45,7 +50,7 @@
 }
 #home {
   margin-top: 10em;
-  margin-left: 35em;
+  margin-left: 30em;
   padding: 2em;
 }
 a {
